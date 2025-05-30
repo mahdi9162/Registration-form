@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SynergySpark Form </title>
+    <link rel="icon" href="Images/library.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main-box">
+        <nav>
+            <div class="nav4">
+                <i class="fa-solid fa-building-columns"></i> <span> SynergySpark </span>
+                <a href="#"> Pricing </a>
+                <a href="#"> Resources </a>
+                <a href="#"> Careers </a>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn"> Products
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+            </div>
+
+            <div class="nav-last">
+                <button class="contact"> Contact sales </button>
+                <button class="dashbrd"> Dashboard </button>
+            </div>
+
+        </nav>
+
+        <div id="content-box">
+            <div class="img-column">
+                <img src="Images/Photo2.jpg">
+            </div>
+
+            <div class="form-head">
+                <h2> How can we help? </h2>
+                <p> No matter your business size, needs, or payments <br />
+                    infrastructure, our expert team can help. </p>
+
+                <form>
+                    <div class="fname">
+                        <label class="main-label"> First name* </label> <br />
+                        <input type="text" name="name" id="input-Fname" placeholder=" First name" pattern="^[A-Za-z]+$"
+                            maxlength="20" required>
+                    </div>
+
+                    <div class="lname">
+                        <label class="main-label"> Last name* </label> <br />
+                        <input type="text" name="name" id="input-Lname" placeholder=" Last name" pattern="^[A-Za-z]+$"
+                            maxlength="10" required>
+                    </div>
+
+                    <div class="email">
+                        <label class="main-label"> Email* </label> <br />
+                        <input type="email" name="email" id="input-email" placeholder=" you@company.com" maxlength="30"
+                            required>
+                    </div>
+
+                    <div class="phone">
+                        <label class="main-label"> Phone* </label> <br />
+                        <input type="number" name="number" id="input-number" placeholder=" +8801XXXXXXXXX"
+                            pattern="^/+0881[3-9]/d{8}$" maxlength="14" required>
+                    </div>
+
+                    <div class="company-size">
+                        <label class="main-label"> Company size </label> <br />
+                        <select required>
+                            <option> 50-100 employees </option>
+                            <option> 100-500 employees </option>
+                            <option> 500-1000 employees </option>
+                        </select>
+                    </div>
+
+                    <div class="country">
+                        <label class="main-label"> Country </label> <br />
+                        <select required>
+                            <option> Bangladesh </option>
+                            <option> United States </option>
+                            <option> United Kingdom </option>
+                        </select>
+                    </div>
+
+                    <div class="payments-volume">
+                        <label class="main-label"> Payments volume per month </label> <br />
+                        <select required>
+                            <option> 50-100 employees </option>
+                            <option> 100-500 employees </option>
+                            <option> 500-1000 employees </option>
+                        </select>
+                    </div>
+
+                    <div class="products-check">
+                        <p class="main-label"> What products are you looking for? </p>
+
+                        <input type="checkbox" id="products" name="products" value="in-person-pay">
+                        <label class="cb-label"> Online or in-person payments </label> <br />
+
+                        <input type="checkbox" id="products" name="products" value="sub-invoice-tax">
+                        <label class="cb-label"> Subscription, invoicing or tax </label> <br />
+
+                        <input type="checkbox" id="products" name="products" value="accounts">
+                        <label class="cb-label"> Identity verification or financial accounts </label> <br />
+
+                        <input type="checkbox" id="products" name="products" value="else">
+                        <label class="cb-label"> Something else </label> <br />
+                    </div>
+
+                    <div class="text-box">
+                        <label class="main-label"> Anything else? </label> <br />
+                        <textarea id="text-area" name="text-area" rows="4" cols="50"> Tell us more about your project, needs and timeline...
+                        </textarea>
+                    </div>
+
+                    <div class="button">
+                        <input type="button" value="Contact us">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+</body>
+
+</html>
